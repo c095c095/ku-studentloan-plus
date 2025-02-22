@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "KU Studenloan Plus",
+  "version": "1.0.0",
+  "description": "ปรับปรุง UI/UX ของเว็บไซต์ sw.sa.ku.ac.th",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://sw.sa.ku.ac.th/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://sw.sa.ku.ac.th/Fha/*"],
+      "exclude_matches": ["https://sw.sa.ku.ac.th/Fha/user/viewdata1.php*"],
+      "js": ["content.js"],
+      "css": ["styles/tailwind.min.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icons/16x16.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  }
+}
