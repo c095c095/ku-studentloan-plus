@@ -10,8 +10,8 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://sw.sa.ku.ac.th/Fha/*"],
-      "exclude_matches": ["https://sw.sa.ku.ac.th/Fha/user/viewdata1.php*"],
+      "matches": ["https://sw.sa.ku.ac.th/Fha/*", "https://www.sw.sa.ku.ac.th/Fha/*"],
+      "exclude_matches": ["https://sw.sa.ku.ac.th/Fha/user/viewdata1.php*", "https://www.sw.sa.ku.ac.th/Fha/user/viewdata1.php*"],
       "js": ["content.js"],
       "css": ["styles/tailwind.min.css"],
       "run_at": "document_start"
