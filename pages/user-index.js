@@ -20,10 +20,10 @@ function createLayout(scrapeDOM) {
     .dropdown-button[aria-expanded="true"] svg.arrow {
       transform: rotate(180deg);
     }
-    .dropdown-button[aria-expanded="true"].hover\:text-accent-foreground {
+    .dropdown-button[aria-expanded="true"].hover\\:text-accent-foreground {
       color: hsl(240 5.9% 10%);
     }
-    .dropdown-button[aria-expanded="true"].hover\:bg-accent {
+    .dropdown-button[aria-expanded="true"].hover\\:bg-accent {
       background-color: hsl(240 4.8% 95.9%);
     }
   </style>
@@ -353,48 +353,48 @@ function injectMainContent(layout, oldBody = null) {
           <div class="container">
             <!-- -->
             <div class="flex flex-col">
-          <div class="rounded-xl border bg-card bg-white text-card-foreground shadow">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="border-b bg-gray-200">
-                  <th class="p-4 align-middle font-medium">ลำดับ</th>
-                  <th class="p-4 align-middle font-medium">ประเภท</th>
-                  <th class="p-4 align-middle font-medium text-left">ชื่อโครงการ</th>
-                  <th class="p-4 align-middle font-medium">ภาพ</th>
-                  <th class="p-4 align-middle font-medium text-left">วันที่และสถานที่จัดกิจกรรม</th>
-                  <th class="p-4 align-middle font-medium text-right">ชั่วโมงกิจกรรม</th>
-                  <th class="p-4 align-middle font-medium">สถานะ</th>
-                  <th class="p-4 align-middle font-medium">จัดการ</th>
-                </tr>
-              </thead>
-              <tbody class="border-b-0">
-                <tr class="border-b hover:bg-gray-100 transition-colors">
-                  <td class="p-4 align-middle font-medium text-center">1</td>
-                  <td class="p-4 align-middle font-medium text-center">
-                    <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-gray-200">ประเภท</div>
-                  </td>
-                  <td class="p-4 align-middle font-medium">
-                    อื่น_โครงการปฐมนิเทศกองทุนเงินให้กู้ยืมเพื่อการศึกษา ปีการศึกษา 2567
-                  </td>
-                  <td class="p-4 align-middle font-medium text-center">
-                    <img src="https://sw.sa.ku.ac.th/Fha/user/fileupload/20250222330285715.jpg" class="w-24 max-h-24 rounded mx-auto shadow cursor-pointer" alt="อื่น_โครงการปฐมนิเทศกองทุนเงินให้กู้ยืมเพื่อการศึกษา ปีการศึกษา 2567">
-                  </td>
-                  <td class="p-4 align-middle font-medium">
-                    31 กรกฎาคม 2567  
-                    <br>
-                    ห้องบรรยายและจัดกิจกรรม ชั้น 1 อาคารระพีสาคริก
-                  </td>
-                  <td class="p-4 align-middle font-medium text-right">1 ชั่วโมง</td>
-                  <td class="p-4 align-middle font-medium text-center">ตรวจสอบ</td>
-                  <td class="p-4 align-middle font-medium text-center">
-                    <button class="h-9 px-4 py-2 inline-flex items-center justify-center text-sm font-medium rounded-md bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">ส่งข้อมูล</button>
-                    <button class="h-9 px-4 py-2 inline-flex items-center justify-center text-sm border font-medium rounded-md text-red-500 hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500">ลบ</button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+              <div class="rounded-xl border bg-card bg-white text-card-foreground shadow">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b bg-gray-200">
+                      <th class="p-4 align-middle font-medium">ลำดับ</th>
+                      <th class="p-4 align-middle font-medium">ประเภท</th>
+                      <th class="p-4 align-middle font-medium text-left">ชื่อโครงการ</th>
+                      <th class="p-4 align-middle font-medium">ภาพ</th>
+                      <th class="p-4 align-middle font-medium text-left">วันที่และสถานที่จัดกิจกรรม</th>
+                      <th class="p-4 align-middle font-medium text-right">ชั่วโมงกิจกรรม</th>
+                      <th class="p-4 align-middle font-medium">สถานะ</th>
+                      <th class="p-4 align-middle font-medium">จัดการ</th>
+                    </tr>
+                  </thead>
+                  <tbody class="border-b-0">
+                    <tr class="border-b hover:bg-gray-100 transition-colors">
+                      <td class="p-4 align-middle font-medium text-center">1</td>
+                      <td class="p-4 align-middle font-medium text-center">
+                        <div class="inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-gray-200">ประเภท</div>
+                      </td>
+                      <td class="p-4 align-middle font-medium">
+                        อื่น_โครงการปฐมนิเทศกองทุนเงินให้กู้ยืมเพื่อการศึกษา ปีการศึกษา 2567
+                      </td>
+                      <td class="p-4 align-middle font-medium text-center">
+                        <img src="https://sw.sa.ku.ac.th/Fha/user/fileupload/20250222330285715.jpg" class="w-24 max-h-24 rounded mx-auto shadow cursor-pointer" alt="อื่น_โครงการปฐมนิเทศกองทุนเงินให้กู้ยืมเพื่อการศึกษา ปีการศึกษา 2567">
+                      </td>
+                      <td class="p-4 align-middle font-medium">
+                        31 กรกฎาคม 2567  
+                        <br>
+                        ห้องบรรยายและจัดกิจกรรม ชั้น 1 อาคารระพีสาคริก
+                      </td>
+                      <td class="p-4 align-middle font-medium text-right">1 ชั่วโมง</td>
+                      <td class="p-4 align-middle font-medium text-center">ตรวจสอบ</td>
+                      <td class="p-4 align-middle font-medium text-center">
+                        <button class="h-9 px-4 py-2 inline-flex items-center justify-center text-sm font-medium rounded-md bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500">ส่งข้อมูล</button>
+                        <button class="h-9 px-4 py-2 inline-flex items-center justify-center text-sm border font-medium rounded-md text-red-500 bg-white hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500">ลบ</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
             <!-- -->
           </div>
         </div>

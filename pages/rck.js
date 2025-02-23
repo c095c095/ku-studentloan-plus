@@ -20,10 +20,10 @@ function createLayout(scrapeDOM) {
     .dropdown-button[aria-expanded="true"] svg.arrow {
       transform: rotate(180deg);
     }
-    .dropdown-button[aria-expanded="true"].hover\:text-accent-foreground {
+    .dropdown-button[aria-expanded="true"].hover\\:text-accent-foreground {
       color: hsl(240 5.9% 10%);
     }
-    .dropdown-button[aria-expanded="true"].hover\:bg-accent {
+    .dropdown-button[aria-expanded="true"].hover\\:bg-accent {
       background-color: hsl(240 4.8% 95.9%);
     }
   </style>
