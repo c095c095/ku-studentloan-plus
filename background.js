@@ -1,6 +1,7 @@
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
   const actions = {
     injectScript: () => injectScript(message.scriptPath, sender.tab?.id, sendResponse),
+    injectCSS: () => injectCSS(message.css, sender.tab?.id, sendResponse),
     createImageUrl: () => createImageUrl(message.imagePath, sendResponse),
   };
 
@@ -30,6 +31,27 @@ function injectScript(scriptPath, tabId, sendResponse) {
       sendResponse({ status: "failed", error: chrome.runtime.lastError.message });
     } else {
       console.log(`Script ${scriptPath} injected into tab ${tabId}.`, results);
+      sendResponse({ status: "success" });
+    }
+  });
+}
+
+function injectCSS(css, tabId, sendResponse) {
+  if (!tabId) {
+    console.error("No tab ID provided for CSS injection.");
+    sendResponse({ status: "failed", error: "Invalid tab ID" });
+    return;
+  }
+
+  chrome.scripting.insertCSS({
+    target: { tabId },
+    css: css,
+  }, () => {
+    if (chrome.runtime.lastError) {
+      console.error("CSS injection error:", chrome.runtime.lastError);
+      sendResponse({ status: "failed", error: chrome.runtime.lastError.message });
+    } else {
+      console.log(`CSS injected into tab ${tabId}.`);
       sendResponse({ status: "success" });
     }
   });

@@ -48,4 +48,31 @@ function handleScriptInjection() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", handleScriptInjection);
+document.addEventListener("DOMContentLoaded", () => {
+  const injectStyles = () => {
+    const fontLink = document.createElement('link');
+    fontLink.rel = 'stylesheet';
+    fontLink.href = 'https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap';
+    document.head.appendChild(fontLink);
+
+    const fontStyles = `
+      * {
+        font-family: 'Sarabun', sans-serif !important;
+      }
+    `;
+
+    chrome.runtime.sendMessage({ 
+      action: "injectCSS", 
+      css: fontStyles 
+    }, (response) => {
+      if (response?.status === "success") {
+        console.log("✅ Styles injected");
+      } else {
+        console.error("❌ Failed to inject styles");
+      }
+    });
+  }
+
+  handleScriptInjection();
+  injectStyles();
+});
