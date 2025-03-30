@@ -219,34 +219,34 @@ newBody.innerHTML = `
                   </g>
                 </svg>
               </div>
-              <div class="font-semibold text-xl tracking-tight">ยินดีต้อนรับ</div>
-              <div class="text-sm text-gray-500">เข้าสู่ระบบด้วยรหัสนิสิตและเลขประจำตัวประชาชน</div>
+              <div class="font-semibold text-3xl tracking-tight">ยินดีต้อนรับ</div>
+              <div class="text-gray-500">เข้าสู่ระบบด้วยรหัสนิสิตและเลขประจำตัวประชาชน</div>
             </div>
             <div class="p-6 pt-0">
               <form id="login-form">
                 <div class="space-y-6">
                   <div class="space-y-6">
                     <div class="space-y-2">
-                      <label for="student-id" class="text-sm font-medium">รหัสนิสิต</label>
+                      <label for="student-id" class="font-medium">รหัสนิสิต</label>
                       <input type="text" id="student-id" required maxlength="10" placeholder="รหัสนิสิต" class="w-full h-9 px-3 py-1 text-base border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500">
                     </div>
                     <div class="space-y-2">
-                      <label for="idc" class="text-sm font-medium">เลขประจำตัวประชาชน</label>
+                      <label for="idc" class="font-medium">เลขประจำตัวประชาชน</label>
                       <div class="relative">
                         <input type="password" id="idc" required maxlength="13" placeholder="เลขประจำตัวประชาชน" class="w-full h-9 px-3 py-1 text-base border rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-500">
-                        <button type="button" id="switch-idc" class="bg-transparent p-0 m-0 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground absolute bottom-1 right-1 h-7 w-7" data-id="5">
+                        <button type="button" id="switch-idc" class="bg-transparent p-0 m-0 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground absolute bottom-1 right-1 h-7 w-7" data-id="5">
                           <svg data-id="6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 stroke-current text-gray-800"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path><line x1="2" x2="22" y1="2" y2="22"></line></svg>
                         </button>
                       </div>
                     </div>
                     <label class="flex items-center space-x-2">
                       <input type="checkbox" id="remember-me" checked class="h-4 w-4 shrink-0 rounded-sm border border-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50">
-                      <span class="text-sm font-medium leading-none cursor-pointer">จำฉันไว้</span>
+                      <span class="font-medium leading-none cursor-pointer">จำฉันไว้</span>
                     </label>
                     <div style="margin-top: 0; display: none;" id="remove-remember-me-container">
-                      <span class="text-sm font-medium leading-none underline cursor-pointer hover:text-red-500" id="remove-remember-me">ลบข้อมูลของฉัน</span>
+                      <span class="font-medium leading-none underline cursor-pointer hover:text-red-500" id="remove-remember-me">ลบข้อมูลของฉัน</span>
                     </div>
-                    <button type="submit" id="login-button" class="w-full h-9 px-4 py-2 inline-flex items-center justify-center text-sm font-medium rounded-md bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 shadow">
+                    <button type="submit" id="login-button" class="w-full h-9 px-4 py-2 inline-flex items-center justify-center font-medium rounded-md bg-green-600 text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 shadow">
                       เข้าสู่ระบบ
                     </button>
                     <div class="text-xs text-right text-gray-500">Made with ❤️ by <a href="https://github.com/c095c095" target="_blank">Sonsiwawong Suklert</a></div>
